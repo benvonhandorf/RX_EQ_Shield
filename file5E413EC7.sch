@@ -28,39 +28,26 @@ F 3 "http://www.ti.com/lit/ds/symlink/opa1678.pdf" H 4650 2600 50  0001 C CNN
 	1    4650 2600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3250 2700 4150 2700
 $Comp
 L power:GNDA #PWR?
 U 1 1 5E49554A
-P 3750 2350
-F 0 "#PWR?" H 3750 2100 50  0001 C CNN
-F 1 "GNDA" H 3755 2177 50  0000 C CNN
-F 2 "" H 3750 2350 50  0001 C CNN
-F 3 "" H 3750 2350 50  0001 C CNN
-	1    3750 2350
+P 3750 2200
+F 0 "#PWR?" H 3750 1950 50  0001 C CNN
+F 1 "GNDA" H 3755 2027 50  0000 C CNN
+F 2 "" H 3750 2200 50  0001 C CNN
+F 3 "" H 3750 2200 50  0001 C CNN
+	1    3750 2200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 2350 4150 2350
+	3750 2200 4150 2200
 Wire Wire Line
-	4150 2350 4150 2500
+	4150 2200 4150 2500
 Wire Wire Line
 	4150 2500 4350 2500
 Wire Wire Line
-	4950 2600 4950 3000
-Wire Wire Line
-	4950 3000 4150 3000
-Wire Wire Line
-	4150 3000 4150 2700
-Connection ~ 4150 2700
-Wire Wire Line
-	4150 2700 4350 2700
-Wire Wire Line
 	6050 2600 4950 2600
 Connection ~ 4950 2600
-Text Notes 4000 4400 0    50   ~ 0
-TODO: Incorporate gain control
 $Comp
 L Amplifier_Operational:OPA1678 U?
 U 3 1 5E497090
@@ -124,34 +111,92 @@ Connection ~ 7600 2900
 $Comp
 L Amplifier_Operational:OPA1678 U?
 U 1 1 5E49AA78
-P 4700 3850
-F 0 "U?" H 4700 4217 50  0000 C CNN
-F 1 "OPA1678" H 4700 4126 50  0000 C CNN
-F 2 "" H 4700 3850 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/opa1678.pdf" H 4700 3850 50  0001 C CNN
-	1    4700 3850
+P 4700 4250
+F 0 "U?" H 4700 4617 50  0000 C CNN
+F 1 "OPA1678" H 4700 4526 50  0000 C CNN
+F 2 "" H 4700 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa1678.pdf" H 4700 4250 50  0001 C CNN
+	1    4700 4250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4950 3000 4950 3450
+	4150 4150 4400 4150
 Wire Wire Line
-	4950 3450 4150 3450
+	5000 4250 5000 4650
 Wire Wire Line
-	4150 3450 4150 3750
+	5000 4650 4300 4650
 Wire Wire Line
-	4150 3750 4400 3750
-Connection ~ 4950 3000
+	4300 4650 4300 4350
 Wire Wire Line
-	5000 3850 5000 4250
-Wire Wire Line
-	5000 4250 4300 4250
-Wire Wire Line
-	4300 4250 4300 3950
-Wire Wire Line
-	4300 3950 4400 3950
-Text HLabel 6100 3850 2    50   Output ~ 0
+	4300 4350 4400 4350
+Text HLabel 6100 4250 2    50   Output ~ 0
 Audio_Out_R
 Wire Wire Line
-	5000 3850 6100 3850
-Connection ~ 5000 3850
+	5000 4250 6100 4250
+Connection ~ 5000 4250
+Wire Wire Line
+	4950 2600 4950 3100
+$Comp
+L Device:R R?
+U 1 1 5E4C4511
+P 3800 2700
+F 0 "R?" V 3593 2700 50  0000 C CNN
+F 1 "4.7k" V 3684 2700 50  0000 C CNN
+F 2 "" V 3730 2700 50  0001 C CNN
+F 3 "~" H 3800 2700 50  0001 C CNN
+	1    3800 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5E4C4B5E
+P 4450 3450
+F 0 "RV?" V 4243 3450 50  0000 C CNN
+F 1 "10k" V 4334 3450 50  0000 C CNN
+F 2 "" H 4450 3450 50  0001 C CNN
+F 3 "~" H 4450 3450 50  0001 C CNN
+	1    4450 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 2700 4350 2700
+Wire Wire Line
+	4100 2700 3950 2700
+Connection ~ 4100 2700
+Wire Wire Line
+	3650 2700 3250 2700
+$Comp
+L Device:C C?
+U 1 1 5E4D4CD0
+P 4450 3100
+F 0 "C?" V 4198 3100 50  0000 C CNN
+F 1 "C" V 4289 3100 50  0000 C CNN
+F 2 "" H 4488 2950 50  0001 C CNN
+F 3 "~" H 4450 3100 50  0001 C CNN
+	1    4450 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4300 3450 4100 3450
+Wire Wire Line
+	4100 2700 4100 3100
+Wire Wire Line
+	4600 3100 4950 3100
+Connection ~ 4950 3100
+Wire Wire Line
+	4300 3100 4100 3100
+Connection ~ 4100 3100
+Wire Wire Line
+	4100 3100 4100 3450
+Wire Wire Line
+	4450 3600 4950 3600
+Wire Wire Line
+	4950 3100 4950 3600
+Connection ~ 4450 3600
+Wire Wire Line
+	4450 3600 4150 3600
+Wire Wire Line
+	4150 3600 4150 4150
+Text Notes 5100 3250 0    50   ~ 0
+Filter:\nC = 1nF\n@1  - 159MHz - Not great, but minimum \ngain and low R will predominate?\n@10k - 15kHz
 $EndSCHEMATC

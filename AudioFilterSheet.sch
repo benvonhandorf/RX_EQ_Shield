@@ -388,7 +388,7 @@ Connection ~ 4450 3150
 Wire Wire Line
 	4450 3150 3950 3150
 Text Notes 5800 1450 0    50   ~ 0
-BPF: 1kHz - 2kHz:
+BPF: 1kHz - 2kHz:\nA1 - 47nF or 68nF\nA2 - 22nF\nA3 - 3.3nF\nP1, P2, P3 - 10k\n\nA4, A5, A6 - 8.2nF\nP4 - 2.8k\nP5 - 6.8k\nP6 - 47k
 $Comp
 L Device:C C?
 U 1 1 5E48E352
@@ -410,4 +410,8 @@ Wire Wire Line
 Wire Wire Line
 	8850 2450 8350 2450
 Connection ~ 8350 2450
+Text Notes 5800 2350 0    50   ~ 0
+LPF: 1kHz \nA1 - 22nF \nA2 - 22nF \nA3 - 6.8nF \nA4 - 47nF \nA5 - DNP \nA6 - 4.7nF \nP4 - 0 ohm \nAll other P – 10k 
+Text Notes 5800 3250 0    50   ~ 0
+HPF: 2kHz \nA1 – 5.7k \nA2 – 6.8k \nA3 – 23k \nA4 – 2.2k \nA5 – DNP \nA6 – 33k \nP4 – 0 Ohm \nAll other P – 8.2nF 
 $EndSCHEMATC
