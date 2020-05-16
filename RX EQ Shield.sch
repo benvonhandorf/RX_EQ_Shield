@@ -269,8 +269,6 @@ Wire Wire Line
 	7800 2500 8250 2500
 Text Notes 5000 3950 0    50   ~ 0
 EQ Channels have 10k output resistors incorporated
-Text Notes 5250 4700 0    50   ~ 0
-TODO:\n- Filter component calculations
 $Comp
 L Device:R R?
 U 1 1 5E4AE546

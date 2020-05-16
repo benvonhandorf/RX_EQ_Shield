@@ -150,42 +150,42 @@ F 3 "" H 4300 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:LM358 U?
+L Amplifier_Operational:OPA1678 U?
 U 3 1 5E3A2220
 P 8450 2150
 AR Path="/5E39A5DA/5E39A609/5E3A2220" Ref="U?"  Part="3" 
 AR Path="/5E41281A/5E39A609/5E3A2220" Ref="U?"  Part="3" 
 AR Path="/5E41292B/5E39A609/5E3A2220" Ref="U?"  Part="3" 
 F 0 "U?" H 8408 2196 50  0000 L CNN
-F 1 "LM358" H 8408 2105 50  0000 L CNN
+F 1 "OPA1678" H 8408 2105 50  0000 L CNN
 F 2 "" H 8450 2150 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 8450 2150 50  0001 C CNN
 	3    8450 2150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:LM358 U?
+L Amplifier_Operational:OPA1678 U?
 U 1 1 5E3A55EC
 P 4750 1500
 AR Path="/5E39A5DA/5E39A609/5E3A55EC" Ref="U?"  Part="1" 
 AR Path="/5E41281A/5E39A609/5E3A55EC" Ref="U?"  Part="1" 
 AR Path="/5E41292B/5E39A609/5E3A55EC" Ref="U?"  Part="1" 
 F 0 "U?" H 4750 1867 50  0000 C CNN
-F 1 "LM358" H 4750 1776 50  0000 C CNN
+F 1 "OPA1678" H 4750 1776 50  0000 C CNN
 F 2 "" H 4750 1500 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 4750 1500 50  0001 C CNN
 	1    4750 1500
 	1    0    0    1   
 $EndComp
 $Comp
-L Amplifier_Operational:LM358 U?
+L Amplifier_Operational:OPA1678 U?
 U 2 1 5E3A6C1B
 P 4750 3550
 AR Path="/5E39A5DA/5E39A609/5E3A6C1B" Ref="U?"  Part="2" 
 AR Path="/5E41281A/5E39A609/5E3A6C1B" Ref="U?"  Part="2" 
 AR Path="/5E41292B/5E39A609/5E3A6C1B" Ref="U?"  Part="2" 
 F 0 "U?" H 4750 3917 50  0000 C CNN
-F 1 "LM358" H 4750 3826 50  0000 C CNN
+F 1 "OPA1678" H 4750 3826 50  0000 C CNN
 F 2 "" H 4750 3550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 4750 3550 50  0001 C CNN
 	2    4750 3550
@@ -411,7 +411,7 @@ Wire Wire Line
 	8850 2450 8350 2450
 Connection ~ 8350 2450
 Text Notes 5800 2350 0    50   ~ 0
-LPF: 1kHz\nA1 - 22nF\nA2 - 22nF\nA3 - 8.2nF\nA4 - 47nF\nA5 - DNP\nA6 - 4.7nF\nP4 - 0 ohm\nAll other P - 10k
+LPF: 1kHz \nA1 - 22nF \nA2 - 22nF \nA3 - 6.8nF \nA4 - 47nF \nA5 - DNP \nA6 - 4.7nF \nP4 - 0 ohm \nAll other P – 10k 
 Text Notes 5800 3250 0    50   ~ 0
-HPF: 2kHz \nA1 – 5.7k \nA2 – 6.8k \nA3 – 20k \nA4 – 2.7k \nA5 – DNP \nA6 – 3.3k \nP4 – 0 Ohm \nAll other P – 8.2nF 
+HPF: 2kHz \nA1 – 5.7k \nA2 – 6.8k \nA3 – 23k \nA4 – 2.2k \nA5 – DNP \nA6 – 33k \nP4 – 0 Ohm \nAll other P – 8.2nF 
 $EndSCHEMATC
