@@ -18,10 +18,10 @@ Audio_In
 Text HLabel 6050 2600 2    50   Output ~ 0
 Audio_Out_L
 $Comp
-L Amplifier_Operational:OPA1678 U?
+L Amplifier_Operational:OPA1678 U5
 U 1 1 5E491E4B
 P 4650 2600
-F 0 "U?" H 4650 2967 50  0000 C CNN
+F 0 "U5" H 4650 2967 50  0000 C CNN
 F 1 "OPA1678" H 4650 2876 50  0000 C CNN
 F 2 "" H 4650 2600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1678.pdf" H 4650 2600 50  0001 C CNN
@@ -29,10 +29,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/opa1678.pdf" H 4650 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GNDA #PWR?
+L power:GNDA #PWR035
 U 1 1 5E49554A
 P 3750 2200
-F 0 "#PWR?" H 3750 1950 50  0001 C CNN
+F 0 "#PWR035" H 3750 1950 50  0001 C CNN
 F 1 "GNDA" H 3755 2027 50  0000 C CNN
 F 2 "" H 3750 2200 50  0001 C CNN
 F 3 "" H 3750 2200 50  0001 C CNN
@@ -49,10 +49,10 @@ Wire Wire Line
 	6050 2600 4950 2600
 Connection ~ 4950 2600
 $Comp
-L Amplifier_Operational:OPA1678 U?
+L Amplifier_Operational:OPA1678 U5
 U 3 1 5E497090
 P 7700 2600
-F 0 "U?" H 7658 2646 50  0000 L CNN
+F 0 "U5" H 7658 2646 50  0000 L CNN
 F 1 "OPA1678" H 7658 2555 50  0000 L CNN
 F 2 "" H 7700 2600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1678.pdf" H 7700 2600 50  0001 C CNN
@@ -60,10 +60,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/opa1678.pdf" H 7700 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR034
 U 1 1 5E4984E8
 P 7600 2050
-F 0 "#PWR?" H 7600 1900 50  0001 C CNN
+F 0 "#PWR034" H 7600 1900 50  0001 C CNN
 F 1 "+5V" H 7615 2223 50  0000 C CNN
 F 2 "" H 7600 2050 50  0001 C CNN
 F 3 "" H 7600 2050 50  0001 C CNN
@@ -71,10 +71,10 @@ F 3 "" H 7600 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR036
 U 1 1 5E4987EF
 P 7600 3100
-F 0 "#PWR?" H 7600 2850 50  0001 C CNN
+F 0 "#PWR036" H 7600 2850 50  0001 C CNN
 F 1 "GND" H 7605 2927 50  0000 C CNN
 F 2 "" H 7600 3100 50  0001 C CNN
 F 3 "" H 7600 3100 50  0001 C CNN
@@ -86,10 +86,10 @@ Wire Wire Line
 Wire Wire Line
 	7600 2300 7600 2250
 $Comp
-L Device:C C?
+L Device:C C12
 U 1 1 5E49915D
 P 8250 2550
-F 0 "C?" H 8365 2596 50  0000 L CNN
+F 0 "C12" H 8365 2596 50  0000 L CNN
 F 1 "0.1uF" H 8365 2505 50  0000 L CNN
 F 2 "" H 8288 2400 50  0001 C CNN
 F 3 "~" H 8250 2550 50  0001 C CNN
@@ -109,10 +109,10 @@ Wire Wire Line
 	8250 2900 8250 2700
 Connection ~ 7600 2900
 $Comp
-L Amplifier_Operational:OPA1678 U?
+L Amplifier_Operational:OPA1678 U6
 U 1 1 5E49AA78
 P 4700 4250
-F 0 "U?" H 4700 4617 50  0000 C CNN
+F 0 "U6" H 4700 4617 50  0000 C CNN
 F 1 "OPA1678" H 4700 4526 50  0000 C CNN
 F 2 "" H 4700 4250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1678.pdf" H 4700 4250 50  0001 C CNN
@@ -137,10 +137,10 @@ Connection ~ 5000 4250
 Wire Wire Line
 	4950 2600 4950 3100
 $Comp
-L Device:R R?
+L Device:R R9
 U 1 1 5E4C4511
 P 3800 2700
-F 0 "R?" V 3593 2700 50  0000 C CNN
+F 0 "R9" V 3593 2700 50  0000 C CNN
 F 1 "4.7k" V 3684 2700 50  0000 C CNN
 F 2 "" V 3730 2700 50  0001 C CNN
 F 3 "~" H 3800 2700 50  0001 C CNN
@@ -148,10 +148,10 @@ F 3 "~" H 3800 2700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_POT RV?
+L Device:R_POT RV4
 U 1 1 5E4C4B5E
 P 4450 3450
-F 0 "RV?" V 4243 3450 50  0000 C CNN
+F 0 "RV4" V 4243 3450 50  0000 C CNN
 F 1 "10k" V 4334 3450 50  0000 C CNN
 F 2 "" H 4450 3450 50  0001 C CNN
 F 3 "~" H 4450 3450 50  0001 C CNN
@@ -166,10 +166,10 @@ Connection ~ 4100 2700
 Wire Wire Line
 	3650 2700 3250 2700
 $Comp
-L Device:C C?
+L Device:C C13
 U 1 1 5E4D4CD0
 P 4450 3100
-F 0 "C?" V 4198 3100 50  0000 C CNN
+F 0 "C13" V 4198 3100 50  0000 C CNN
 F 1 "1nF" V 4289 3100 50  0000 C CNN
 F 2 "" H 4488 2950 50  0001 C CNN
 F 3 "~" H 4450 3100 50  0001 C CNN
@@ -199,4 +199,5 @@ Wire Wire Line
 	4150 3600 4150 4150
 Text Notes 5100 3250 0    50   ~ 0
 Filter:\nC = 1nF\n@1  - 159MHz - Not great, but minimum \ngain and low R will predominate?\n@10k - 15kHz
+NoConn ~ 4600 3450
 $EndSCHEMATC
