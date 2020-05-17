@@ -45,8 +45,6 @@ Wire Wire Line
 	4450 1900 4850 1900
 Wire Wire Line
 	4850 1900 4850 1950
-Wire Wire Line
-	4450 1750 5100 1750
 $Sheet
 S 5550 2400 750  500 
 U 5E41281A
@@ -75,37 +73,6 @@ Wire Wire Line
 Connection ~ 5150 2550
 Wire Wire Line
 	5150 2550 5150 1750
-$Comp
-L Connector:Conn_01x02_Female TP1
-U 1 1 5E412C7A
-P 5850 950
-F 0 "TP1" H 5878 926 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 5878 835 50  0000 L CNN
-F 2 "" H 5850 950 50  0001 C CNN
-F 3 "~" H 5850 950 50  0001 C CNN
-	1    5850 950 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR01
-U 1 1 5E413291
-P 5400 1050
-F 0 "#PWR01" H 5400 800 50  0001 C CNN
-F 1 "GNDA" H 5405 877 50  0000 C CNN
-F 2 "" H 5400 1050 50  0001 C CNN
-F 3 "" H 5400 1050 50  0001 C CNN
-	1    5400 1050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 1050 5650 1050
-Wire Wire Line
-	5650 950  5100 950 
-Wire Wire Line
-	5100 950  5100 1750
-Connection ~ 5100 1750
-Wire Wire Line
-	5100 1750 5150 1750
 $Sheet
 S 7000 2150 800  500 
 U 5E413EC8
@@ -121,7 +88,7 @@ U 1 1 5E41835B
 P 1450 1350
 F 0 "J1" H 1500 1667 50  0000 C CNN
 F 1 "Conn_02x04_Odd_Even" H 1500 1576 50  0000 C CNN
-F 2 "" H 1450 1350 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x04_Pitch2.54mm" H 1450 1350 50  0001 C CNN
 F 3 "~" H 1450 1350 50  0001 C CNN
 	1    1450 1350
 	1    0    0    -1  
@@ -129,38 +96,34 @@ $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 5E41923D
-P 800 1150
-F 0 "#PWR02" H 800 900 50  0001 C CNN
-F 1 "GND" H 805 977 50  0000 C CNN
-F 2 "" H 800 1150 50  0001 C CNN
-F 3 "" H 800 1150 50  0001 C CNN
-	1    800  1150
+P 1900 1550
+F 0 "#PWR02" H 1900 1300 50  0001 C CNN
+F 1 "GND" H 1905 1377 50  0000 C CNN
+F 2 "" H 1900 1550 50  0001 C CNN
+F 3 "" H 1900 1550 50  0001 C CNN
+	1    1900 1550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR03
 U 1 1 5E419402
-P 2050 1250
-F 0 "#PWR03" H 2050 1100 50  0001 C CNN
-F 1 "+5V" H 2065 1423 50  0000 C CNN
-F 2 "" H 2050 1250 50  0001 C CNN
-F 3 "" H 2050 1250 50  0001 C CNN
-	1    2050 1250
+P 550 1550
+F 0 "#PWR03" H 550 1400 50  0001 C CNN
+F 1 "+5V" H 565 1723 50  0000 C CNN
+F 2 "" H 550 1550 50  0001 C CNN
+F 3 "" H 550 1550 50  0001 C CNN
+	1    550  1550
 	1    0    0    -1  
 $EndComp
-Text GLabel 1100 1450 0    50   Input ~ 0
+Text GLabel 1100 1350 0    50   Input ~ 0
 Audio_In_L
-Wire Wire Line
-	1100 1450 1250 1450
-Text GLabel 1900 1450 2    50   Output ~ 0
-Audio_Out_L
 Text GLabel 1900 1350 2    50   Output ~ 0
+Audio_Out_L
+Text GLabel 1900 1450 2    50   Output ~ 0
 Audio_Out_R
-Text GLabel 1100 1550 0    50   Input ~ 0
+Text GLabel 1900 1250 2    50   Input ~ 0
 Mic_In
-Wire Wire Line
-	1100 1550 1250 1550
-Text GLabel 1900 1550 2    50   Output ~ 0
+Text GLabel 1100 1250 0    50   Output ~ 0
 Mic_Out
 Wire Wire Line
 	1900 1550 1750 1550
@@ -168,15 +131,6 @@ Wire Wire Line
 	1750 1450 1900 1450
 Wire Wire Line
 	1750 1350 1900 1350
-NoConn ~ 1250 1350
-Wire Wire Line
-	1250 1250 950  1250
-Wire Wire Line
-	950  1250 950  1150
-Wire Wire Line
-	950  1150 800  1150
-Wire Wire Line
-	1750 1250 2050 1250
 Wire Wire Line
 	6300 1850 6650 1850
 Wire Wire Line
@@ -225,7 +179,7 @@ U 1 1 5E457AED
 P 1700 3200
 F 0 "C1" H 1815 3246 50  0000 L CNN
 F 1 "10uF" H 1815 3155 50  0000 L CNN
-F 2 "" H 1738 3050 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 1738 3050 50  0001 C CNN
 F 3 "~" H 1700 3200 50  0001 C CNN
 	1    1700 3200
 	1    0    0    -1  
@@ -242,7 +196,7 @@ U 1 1 5E459F4F
 P 2150 3200
 F 0 "C2" H 2265 3246 50  0000 L CNN
 F 1 "1uF" H 2265 3155 50  0000 L CNN
-F 2 "" H 2188 3050 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 2188 3050 50  0001 C CNN
 F 3 "~" H 2150 3200 50  0001 C CNN
 	1    2150 3200
 	1    0    0    -1  
@@ -255,8 +209,6 @@ Wire Wire Line
 Connection ~ 1700 3350
 Text Notes 1150 700  0    50   ~ 0
 FT-891 Audio Breakout Pinout\n
-Text Notes 1150 900  0    50   Italic 10
-CHECK THIS BEFORE SUBMITTING PCB\n
 Text Notes 1200 4800 0    50   ~ 0
 Assumptions:\n- Power is provided via the radio microphone connection.  No isolation \nis provided between the radio and the audio circuitry, either out or in.
 Text GLabel 9000 2500 2    50   Output ~ 0
@@ -275,7 +227,7 @@ U 1 1 5E4AE546
 P 8400 2250
 F 0 "R1" V 8193 2250 50  0000 C CNN
 F 1 "1" V 8284 2250 50  0000 C CNN
-F 2 "" V 8330 2250 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8330 2250 50  0001 C CNN
 F 3 "~" H 8400 2250 50  0001 C CNN
 	1    8400 2250
 	0    1    1    0   
@@ -286,7 +238,7 @@ U 1 1 5E4AE6C0
 P 8400 2500
 F 0 "R2" V 8193 2500 50  0000 C CNN
 F 1 "1" V 8284 2500 50  0000 C CNN
-F 2 "" V 8330 2500 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 8330 2500 50  0001 C CNN
 F 3 "~" H 8400 2500 50  0001 C CNN
 	1    8400 2500
 	0    1    1    0   
@@ -302,5 +254,16 @@ Mic_Out
 Wire Wire Line
 	1100 1900 1900 1900
 Text Notes 900  2100 0    50   ~ 0
-Microphone signal is unmodified in this version of the design
+Microphone signal is unmodified \nin this version of the design
+Wire Wire Line
+	1100 1350 1250 1350
+Wire Wire Line
+	1100 1250 1250 1250
+NoConn ~ 1250 1450
+Wire Wire Line
+	550  1550 1250 1550
+Wire Wire Line
+	1750 1250 1900 1250
+Wire Wire Line
+	4450 1750 5150 1750
 $EndSCHEMATC

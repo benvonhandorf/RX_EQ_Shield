@@ -23,7 +23,7 @@ F3 "Audio_Out" O R 4600 2650 50
 $EndSheet
 Text HLabel 2300 2400 0    50   Input ~ 0
 Audio_In
-Text HLabel 6100 2200 2    50   Output ~ 0
+Text HLabel 5700 1850 2    50   Output ~ 0
 Audio_Out
 Wire Wire Line
 	2300 2400 3350 2400
@@ -38,9 +38,9 @@ P 5450 2200
 AR Path="/5E39A5DA/5E4118E7" Ref="RV1"  Part="1" 
 AR Path="/5E41281A/5E4118E7" Ref="RV2"  Part="1" 
 AR Path="/5E41292B/5E4118E7" Ref="RV3"  Part="1" 
-F 0 "RV3" V 5243 2200 50  0000 C CNN
+F 0 "RV1" V 5243 2200 50  0000 C CNN
 F 1 "10k" V 5334 2200 50  0000 C CNN
-F 2 "" H 5450 2200 50  0001 C CNN
+F 2 "BVH_Components_Misc:Potentiometer_TT_P090S-Top-Adjust" H 5450 2200 50  0001 C CNN
 F 3 "~" H 5450 2200 50  0001 C CNN
 	1    5450 2200
 	0    1    1    0   
@@ -52,20 +52,20 @@ Wire Wire Line
 $Comp
 L Device:R R3
 U 1 1 5E4A2D28
-P 5850 2200
+P 5450 1850
 AR Path="/5E39A5DA/5E4A2D28" Ref="R3"  Part="1" 
 AR Path="/5E41281A/5E4A2D28" Ref="R7"  Part="1" 
 AR Path="/5E41292B/5E4A2D28" Ref="R8"  Part="1" 
-F 0 "R8" V 5643 2200 50  0000 C CNN
-F 1 "10k" V 5734 2200 50  0000 C CNN
-F 2 "" V 5780 2200 50  0001 C CNN
-F 3 "~" H 5850 2200 50  0001 C CNN
-	1    5850 2200
+F 0 "R3" V 5243 1850 50  0000 C CNN
+F 1 "10k" V 5334 1850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 5380 1850 50  0001 C CNN
+F 3 "~" H 5450 1850 50  0001 C CNN
+	1    5450 1850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5700 2200 5600 2200
+	5600 1850 5700 1850
+NoConn ~ 5450 2050
 Wire Wire Line
-	6000 2200 6100 2200
-NoConn ~ 5300 2200
+	5300 2200 5300 1850
 $EndSCHEMATC

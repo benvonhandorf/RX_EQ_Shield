@@ -1,0 +1,93 @@
+05-17 16:07:12 replicate_layout.action_replicate_layout 305:Plugin executed on: 'linux'
+05-17 16:07:12 replicate_layout.action_replicate_layout 306:Plugin executed with python version: '3.6.9 (default, Apr 18 2020, 01:56:04) \n[GCC 8.4.0]'
+05-17 16:07:12 replicate_layout.action_replicate_layout 307:KiCad build version: Unknown
+05-17 16:07:12 replicate_layout.action_replicate_layout 308:Replicate layout plugin version: 64 started
+05-17 16:07:12 replicate_layout.action_replicate_layout 340:Preparing replicator with RV1 as a reference
+05-17 16:07:12 replicate_layout.replicatelayout 211:getting project hierarchy from schematics
+05-17 16:07:12 replicate_layout.replicatelayout 213:Project hierarchy looks like:
+{'5E39A5DA': ['Low EQ', '/home/benvh/projects/radio/RX EQ Shield/SingleChannelEQ.sch'], '5E39A609': ['AudioFilter', '/home/benvh/projects/radio/RX EQ Shield/AudioFilterSheet.sch'], '5E400B3E': ['Input and AnalogGnd', '/home/benvh/projects/radio/RX EQ Shield/file5E400B3D.sch'], '5E41281A': ['Mid EQ', '/home/benvh/projects/radio/RX EQ Shield/SingleChannelEQ.sch'], '5E41292B': ['High EQ', '/home/benvh/projects/radio/RX EQ Shield/SingleChannelEQ.sch'], '5E413EC8': ['Mixer', '/home/benvh/projects/radio/RX EQ Shield/file5E413EC7.sch']}
+05-17 16:07:12 replicate_layout.replicatelayout 221:getting a list of all footprints on board
+05-17 16:07:12 replicate_layout.action_replicate_layout 367:source anchor footprint is 'RV1'
+Located on:['Low EQ']
+With filenames:['SingleChannelEQ.sch']
+With sheet_id:['Low EQ']
+05-17 16:07:12 replicate_layout.action_replicate_layout 371:Corresponding footprints are 
+[('RV3', ['High EQ']), ('RV2', ['Mid EQ']), ('RV1', ['Low EQ'])]
+05-17 16:07:12 replicate_layout.action_replicate_layout 384:Showing dialog
+05-17 16:07:12 replicate_layout.action_replicate_layout 388:Pcbnew position: wx.Point(0, 27)
+05-17 16:07:12 replicate_layout.action_replicate_layout 394:Display 0: wx.Rect(0, 0, 2560, 1440)
+05-17 16:07:12 replicate_layout.action_replicate_layout 394:Display 1: wx.Rect(2560, 0, 1080, 1920)
+05-17 16:07:12 replicate_layout.action_replicate_layout 398:Toolbar position: wx.Point(2330, 168)
+05-17 16:07:12 replicate_layout.action_replicate_layout 405:Dialog position: wx.Point(2017, 168)
+05-17 16:07:13 replicate_layout.replicatelayout 245:construcing a list of sheets suitable for replication on level:'Low EQ', file:'SingleChannelEQ.sch'
+05-17 16:07:13 replicate_layout.replicatelayout 252:Source sheet path up to the level:['Low EQ']
+05-17 16:07:13 replicate_layout.replicatelayout 256:Footprints on the sheets:
+['RV3', 'RV2', 'RV1']
+05-17 16:07:13 replicate_layout.replicatelayout 259:Footprints raw sheet ids:
+['/5E41292B/5E4118E7', '/5E41281A/5E4118E7', '/5E39A5DA/5E4118E7']
+05-17 16:07:13 replicate_layout.replicatelayout 275:All sheets to replicate:
+[['High EQ'], ['Mid EQ'], ['Low EQ']]
+05-17 16:07:13 replicate_layout.replicatelayout 280:All sheets to replicate sorted:
+[['High EQ'], ['Low EQ'], ['Mid EQ']]
+05-17 16:07:13 replicate_layout.replicatelayout 286:All sheets to replicate sorted and without source sheet:
+[['High EQ'], ['Mid EQ']]
+05-17 16:07:19 replicate_layout.replicatelayout 245:construcing a list of sheets suitable for replication on level:'Low EQ', file:'SingleChannelEQ.sch'
+05-17 16:07:19 replicate_layout.replicatelayout 252:Source sheet path up to the level:['Low EQ']
+05-17 16:07:19 replicate_layout.replicatelayout 256:Footprints on the sheets:
+['RV3', 'RV2', 'RV1']
+05-17 16:07:19 replicate_layout.replicatelayout 259:Footprints raw sheet ids:
+['/5E41292B/5E4118E7', '/5E41281A/5E4118E7', '/5E39A5DA/5E4118E7']
+05-17 16:07:19 replicate_layout.replicatelayout 275:All sheets to replicate:
+[['High EQ'], ['Mid EQ'], ['Low EQ']]
+05-17 16:07:19 replicate_layout.replicatelayout 280:All sheets to replicate sorted:
+[['High EQ'], ['Low EQ'], ['Mid EQ']]
+05-17 16:07:19 replicate_layout.replicatelayout 286:All sheets to replicate sorted and without source sheet:
+[['High EQ'], ['Mid EQ']]
+05-17 16:07:19 replicate_layout.action_replicate_layout 179:Replicating layout
+05-17 16:07:19 replicate_layout.replicatelayout 986:Starting replication of sheets: [['High EQ'], ['Mid EQ']]
+on level: ['Low EQ']
+with tracks=True, zone=True, text=True, containing=True, remove=False, locked=False
+05-17 16:07:19 root 261:updating GUI message: 'Preparing for replication'
+05-17 16:07:19 root 266:updating GUI with: 0
+05-17 16:07:19 replicate_layout.replicatelayout 552:Getting the list of source footprints
+05-17 16:07:19 root 266:updating GUI with: 0
+05-17 16:07:19 replicate_layout.replicatelayout 556:Getting the list of all the remaining footprints
+05-17 16:07:19 replicate_layout.replicatelayout 560:Getting nets local to source footprints
+05-17 16:07:19 replicate_layout.replicatelayout 564:Getting source bounding box
+05-17 16:07:19 root 266:updating GUI with: 37
+05-17 16:07:19 replicate_layout.replicatelayout 568:Getting source tracks
+05-17 16:07:19 root 266:updating GUI with: 50
+05-17 16:07:19 replicate_layout.replicatelayout 572:Getting source zones
+05-17 16:07:19 root 266:updating GUI with: 62
+05-17 16:07:19 replicate_layout.replicatelayout 576:Getting source text items
+05-17 16:07:19 replicate_layout.replicatelayout 580:Getting source text items
+05-17 16:07:19 root 261:updating GUI message: 'Replicating footprints'
+05-17 16:07:19 replicate_layout.replicatelayout 586:Replicating footprints
+05-17 16:07:19 replicate_layout.replicatelayout 592:Replicating footprints on sheet ['High EQ']
+05-17 16:07:19 root 266:updating GUI with: 25
+05-17 16:07:19 replicate_layout.replicatelayout 592:Replicating footprints on sheet ['Mid EQ']
+05-17 16:07:19 root 266:updating GUI with: 59
+05-17 16:07:20 root 266:updating GUI with: 62
+05-17 16:07:20 root 261:updating GUI message: 'Replicating tracks'
+05-17 16:07:20 root 266:updating GUI with: 0
+05-17 16:07:20 replicate_layout.replicatelayout 712:Replicating tracks
+05-17 16:07:20 root 266:updating GUI with: 0
+05-17 16:07:20 replicate_layout.replicatelayout 718:Replicating tracks on sheet ['High EQ']
+05-17 16:07:20 replicate_layout.replicatelayout 718:Replicating tracks on sheet ['Mid EQ']
+05-17 16:07:20 root 266:updating GUI with: 50
+05-17 16:07:20 root 266:updating GUI with: 51
+05-17 16:07:20 root 261:updating GUI message: 'Replicating zones'
+05-17 16:07:20 replicate_layout.replicatelayout 763:Replicating zones
+05-17 16:07:20 replicate_layout.replicatelayout 770:Replicating zones on sheet ['High EQ']
+05-17 16:07:20 root 266:updating GUI with: 50
+05-17 16:07:20 replicate_layout.replicatelayout 770:Replicating zones on sheet ['Mid EQ']
+05-17 16:07:20 root 261:updating GUI message: 'Replicating text'
+05-17 16:07:20 replicate_layout.replicatelayout 829:Replicating text
+05-17 16:07:20 replicate_layout.replicatelayout 836:Replicating text on sheet ['High EQ']
+05-17 16:07:20 root 266:updating GUI with: 50
+05-17 16:07:20 replicate_layout.replicatelayout 836:Replicating text on sheet ['Mid EQ']
+05-17 16:07:20 root 261:updating GUI message: 'Replicating drawings'
+05-17 16:07:20 replicate_layout.replicatelayout 860:Replicating drawings
+05-17 16:07:20 replicate_layout.replicatelayout 866:Replicating drawings on sheet ['High EQ']
+05-17 16:07:20 replicate_layout.replicatelayout 866:Replicating drawings on sheet ['Mid EQ']
+05-17 16:07:20 replicate_layout.action_replicate_layout 201:Replication complete
