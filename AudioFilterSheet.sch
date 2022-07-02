@@ -392,7 +392,7 @@ Connection ~ 4450 3150
 Wire Wire Line
 	4450 3150 3950 3150
 Text Notes 5800 1450 0    50   ~ 0
-BPF: 1kHz - 2kHz:\nA1 - 47nF or 68nF\nA2 - 22nF\nA3 - 3.3nF\nP1, P2, P3 - 10k\n\nA4, A5, A6 - 8.2nF\nP4 - 2.8k\nP5 - 6.8k\nP6 - 47k
+BPF: 1kHz - 2kHz:\nA1 - 47nF or 68nF\nA2 - 22nF\nA3 - 3.3nF\nP1, P2, P3 - 10k\n\nCORRECTED:\nP4, P5, P6 - 8.2nF\nA4 - 2.8k\nA5 - 6.8k\nA6 - 47k
 $Comp
 L Device:C C3
 U 1 1 5E48E352

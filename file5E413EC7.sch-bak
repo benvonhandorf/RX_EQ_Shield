@@ -25,6 +25,10 @@ F 0 "U5" H 4650 2967 50  0000 C CNN
 F 1 "OPA1678" H 4650 2876 50  0000 C CNN
 F 2 "SMD_Packages:SOIC-8-N" H 4650 2600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1678.pdf" H 4650 2600 50  0001 C CNN
+F 4 "X" H 4650 2600 50  0001 C CNN "Spice_Primitive"
+F 5 "OPA1678-dual" H 4650 2600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4650 2600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/benvh/projects/kicad-library/Simulation/OPA1678/OPA1678-dual.lib" H 4650 2600 50  0001 C CNN "Spice_Lib_File"
 	1    4650 2600
 	1    0    0    -1  
 $EndComp
@@ -56,6 +60,10 @@ F 0 "U5" H 7658 2646 50  0000 L CNN
 F 1 "OPA1678" H 7658 2555 50  0000 L CNN
 F 2 "SMD_Packages:SOIC-8-N" H 7700 2600 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1678.pdf" H 7700 2600 50  0001 C CNN
+F 4 "X" H 7700 2600 50  0001 C CNN "Spice_Primitive"
+F 5 "OPA1678-dual" H 7700 2600 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 7700 2600 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/benvh/projects/kicad-library/Simulation/OPA1678/OPA1678-dual.lib" H 7700 2600 50  0001 C CNN "Spice_Lib_File"
 	3    7700 2600
 	1    0    0    -1  
 $EndComp
@@ -116,6 +124,10 @@ F 0 "U5" H 4700 4617 50  0000 C CNN
 F 1 "OPA1678" H 4700 4526 50  0000 C CNN
 F 2 "SMD_Packages:SOIC-8-N" H 4700 4250 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa1678.pdf" H 4700 4250 50  0001 C CNN
+F 4 "X" H 4700 4250 50  0001 C CNN "Spice_Primitive"
+F 5 "OPA1678-dual" H 4700 4250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 4700 4250 50  0001 C CNN "Spice_Netlist_Enabled"
+F 7 "/home/benvh/projects/kicad-library/Simulation/OPA1678/OPA1678-dual.lib" H 4700 4250 50  0001 C CNN "Spice_Lib_File"
 	2    4700 4250
 	1    0    0    -1  
 $EndComp
@@ -200,4 +212,161 @@ Wire Wire Line
 Text Notes 5100 3250 0    50   ~ 0
 Filter:\nC = 1nF\n@1  - 159MHz - Not great, but minimum \ngain and low R will predominate?\n@10k - 15kHz
 NoConn ~ 4600 3450
+$Comp
+L pspice:VSOURCE V1
+U 1 1 5EE73326
+P 2050 3350
+F 0 "V1" H 2278 3396 50  0000 L CNN
+F 1 "VSOURCE" H 2278 3305 50  0000 L CNN
+F 2 "" H 2050 3350 50  0001 C CNN
+F 3 "~" H 2050 3350 50  0001 C CNN
+F 4 "V" H 2050 3350 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 0 ac 1" H 2050 3350 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2050 3350 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2050 3350
+	1    0    0    -1  
+$EndComp
+Text HLabel 2000 2800 0    50   Input ~ 0
+Audio_In
+Wire Wire Line
+	2050 3050 2050 2800
+Wire Wire Line
+	2050 2800 2000 2800
+$Comp
+L pspice:VSOURCE V2
+U 1 1 5EE76558
+P 2000 5200
+F 0 "V2" H 2228 5246 50  0000 L CNN
+F 1 "VSOURCE" H 2228 5155 50  0000 L CNN
+F 2 "" H 2000 5200 50  0001 C CNN
+F 3 "~" H 2000 5200 50  0001 C CNN
+F 4 "V" H 2000 5200 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 5 ac 0" H 2000 5200 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 2000 5200 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    2000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR037
+U 1 1 5EE76C83
+P 2000 4900
+F 0 "#PWR037" H 2000 4750 50  0001 C CNN
+F 1 "+5V" H 2015 5073 50  0000 C CNN
+F 2 "" H 2000 4900 50  0001 C CNN
+F 3 "" H 2000 4900 50  0001 C CNN
+	1    2000 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR038
+U 1 1 5EE771E4
+P 2000 5500
+F 0 "#PWR038" H 2000 5250 50  0001 C CNN
+F 1 "GND" H 2005 5327 50  0000 C CNN
+F 2 "" H 2000 5500 50  0001 C CNN
+F 3 "" H 2000 5500 50  0001 C CNN
+	1    2000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR040
+U 1 1 5EE7A598
+P 4250 5950
+F 0 "#PWR040" H 4250 5700 50  0001 C CNN
+F 1 "GNDA" H 4255 5777 50  0000 C CNN
+F 2 "" H 4250 5950 50  0001 C CNN
+F 3 "" H 4250 5950 50  0001 C CNN
+	1    4250 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V3
+U 1 1 5EE7AAB6
+P 3650 5650
+F 0 "V3" H 3878 5696 50  0000 L CNN
+F 1 "VSOURCE" H 3878 5605 50  0000 L CNN
+F 2 "" H 3650 5650 50  0001 C CNN
+F 3 "~" H 3650 5650 50  0001 C CNN
+F 4 "V" H 3650 5650 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 2.5 ac 0" H 3650 5650 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3650 5650 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3650 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:VSOURCE V4
+U 1 1 5EE7EF7B
+P 3650 6250
+F 0 "V4" H 3878 6296 50  0000 L CNN
+F 1 "VSOURCE" H 3878 6205 50  0000 L CNN
+F 2 "" H 3650 6250 50  0001 C CNN
+F 3 "~" H 3650 6250 50  0001 C CNN
+F 4 "V" H 3650 6250 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 2.5 ac 0" H 3650 6250 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 3650 6250 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    3650 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR039
+U 1 1 5EE8179E
+P 3650 5350
+F 0 "#PWR039" H 3650 5200 50  0001 C CNN
+F 1 "+5V" H 3665 5523 50  0000 C CNN
+F 2 "" H 3650 5350 50  0001 C CNN
+F 3 "" H 3650 5350 50  0001 C CNN
+	1    3650 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR041
+U 1 1 5EE81CED
+P 3650 6550
+F 0 "#PWR041" H 3650 6300 50  0001 C CNN
+F 1 "GND" H 3655 6377 50  0000 C CNN
+F 2 "" H 3650 6550 50  0001 C CNN
+F 3 "" H 3650 6550 50  0001 C CNN
+	1    3650 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 5950 4250 5950
+Connection ~ 3650 5950
+$Comp
+L power:GNDA #PWR01
+U 1 1 5EE87F7A
+P 2050 3650
+F 0 "#PWR01" H 2050 3400 50  0001 C CNN
+F 1 "GNDA" H 2055 3477 50  0000 C CNN
+F 2 "" H 2050 3650 50  0001 C CNN
+F 3 "" H 2050 3650 50  0001 C CNN
+	1    2050 3650
+	1    0    0    -1  
+$EndComp
+Text HLabel 8300 4750 2    50   Output ~ 0
+Audio_Out_R
+Text HLabel 8300 4450 2    50   Output ~ 0
+Audio_Out_L
+$Comp
+L power:GND #PWR?
+U 1 1 5EE8F230
+P 7650 4600
+F 0 "#PWR?" H 7650 4350 50  0001 C CNN
+F 1 "GND" H 7655 4427 50  0000 C CNN
+F 2 "" H 7650 4600 50  0001 C CNN
+F 3 "" H 7650 4600 50  0001 C CNN
+	1    7650 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 4600 7650 4550
+Wire Wire Line
+	7650 4450 8300 4450
+Wire Wire Line
+	7650 4550 8300 4550
+Wire Wire Line
+	8300 4550 8300 4750
+Connection ~ 7650 4550
+Wire Wire Line
+	7650 4550 7650 4450
 $EndSCHEMATC
